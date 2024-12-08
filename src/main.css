@@ -1,0 +1,30 @@
+/* src/main.css */
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #fafafa; /* This will be overridden by MUI theme's background.default */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures root covers full viewport height */
+    overflow: auto; /* Allows scrolling if content overflows */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for WebKit browsers */
+#root::-webkit-scrollbar {
+    display: none;
+}
+  
